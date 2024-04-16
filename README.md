@@ -103,11 +103,11 @@ CRY/edit?usp=sharing
 - Evaluate the model using various performance metrics like mse,r2,mae.
   
   # Conclusion
-  - Provide extra resources and support for high-risk age groups, like 40-49 years, with preventive care and health education.
-  -  Design healthcare programs addressing the specific needs of females who face slightly higher charges.
-  - Develop region-specific healthcare strategies to address regional health disparities and enhance healthcare infrastructure.
-  -  Educate patients about insurance plans and collaborate with providers to optimize reimbursement processes.
-  -  Prioritize family medical history screening during patient assessments and offer genetic counseling services.
-   -  Ensure healthcare services are accessible to all income levels, possibly through sliding scale fee structures or financial assistance programs.
+     -  Provide extra resources and support for high-risk age groups, like 40-49 years, with preventive care and health education.
+     - Design healthcare programs addressing the specific needs of females who face slightly higher charges.
+     -  Develop region-specific healthcare strategies to address regional health disparities and enhance healthcare infrastructure.
+     -  Educate patients about insurance plans and collaborate with providers to optimize reimbursement processes.
+     - Prioritize family medical history screening during patient assessments and offer genetic counseling services.
+     - Ensure healthcare services are accessible to all income levels, possibly through sliding scale fee structures or financial assistance programs.
 
 
