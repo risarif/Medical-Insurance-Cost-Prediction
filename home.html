@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Insurance Cost Predictor</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            width: 50%;
+            margin: auto;
+        }
+        label {
+            color: #555;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* Add shadow to the text box */
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            width: 100px; /* Adjust the width of the button */
+            margin: auto; /* Align the button to the center */
+            display: block; /* Necessary for center alignment */
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* Add shadow to the button */
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        img {
+            display: block;
+            margin: auto;
+            width: 6cm; /* Adjust the width to match the diameter of the circle */
+            height: 6cm; /* Adjust the height to match the diameter of the circle */
+            border-radius: 50%; /* Make the image into a circle shape */
+            box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Add black color border to the circle */
+        }
+        .subtitle {
+            color: #555;
+            text-align: center;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://pngfreepic.com/wp-content/uploads/2022/04/Health-care-insurance-policy-Vector-image-350x292.png">
+    <h1>Medical Insurance Cost Predictor</h1>
+    <p class="subtitle">Enter details carefully. All the columns are mandatory.</p>
+    <form action="/predict" method="post">
+         <label for="age">Age:</label><br>
+        <input type="text" id="age" name="age" value=""><br>
+        <label for="sex">Sex:</label><br>
+        <select id="sex" name="sex">
+            <option value="" selected>Please Select</option>
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select><br>
+
+        <label for="bmi">BMI:</label><br>
+        <input type="text" id="bmi" name="bmi" value=""><br>
+
+        <label for="smoker">Smoker:</label><br>
+        <select id="smoker" name="smoker">
+            <option value="" selected>Please Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="region">Region:</label><br>
+        <select id="region" name="region">
+            <option value="" selected>Please Select</option>
+            <option value="0">East</option>
+            <option value="1">North</option>
+            <option value="2">South</option>
+            <option value="3">West</option>
+        </select><br>
+
+        <label for="exercise_frequency">Exercise Frequency:</label><br>
+        <select id="exercise_frequency" name="exercise_frequency">
+            <option value="" selected>Please Select</option>
+            <option value="0">Low</option>
+            <option value="1">Moderate</option>
+            <option value="2">High</option>
+            <option value="3">Very High</option>
+        </select><br>
+
+        <label for="chronic_conditions">Chronic Conditions:</label><br>
+        <select id="chronic_conditions" name="chronic_conditions">
+            <option value="" selected>Please Select</option>
+            <option value="0">Arthritis</option>
+            <option value="1">Diabetes</option>
+            <option value="2">Heart Disease</option>
+            <option value="3">High Blood Pressure</option>
+        </select><br>
+
+        <label for="insurance_plan_type">Insurance Plan Type:</label><br>
+        <select id="insurance_plan_type" name="insurance_plan_type">
+            <option value="" selected>Please Select</option>
+            <option value="0">HDHP</option>
+            <option value="1">HMO</option>
+            <option value="2">PPO</option>
+        </select><br>
+
+        <label for="distance_to_hospital">Distance to Nearest Hospital:</label><br>
+        <input type="text" id="distance_to_hospital" name="distance_to_hospital" value=""><br>
+
+        <label for="income_level">Income Level:</label><br>
+        <select id="income_level" name="income_level">
+            <option value="" selected>Please Select</option>
+            <option value="0">High</option>
+            <option value="1">Low</option>
+            <option value="2">Medium</option>
+        </select><br>
+
+        <label for="family_medical_history">Family Medical History:</label><br>
+        <select id="family_medical_history" name="family_medical_history">
+            <option value="" selected>Please Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="pcp_visits">Primary Care Physician Visits:</label><br>
+        <input type="text" id="pcp_visits" name="pcp_visits" value=""><br>
+
+        <label for="mental_health_status">Mental Health Status:</label><br>
+        <select id="mental_health_status" name="mental_health_status">
+            <option value="" selected>Please Select</option>
+            <option value="0">Excellent</option>
+            <option value="1">Fair</option>
+            <option value="2">Good</option>
+            <option value="3">Poor</option>
+        </select><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #afeeee;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .prediction-box {
+            display: inline-block;
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        /* Add this CSS for the image */
+        .circle-image {
+            width: 6cm; /* Diameter */
+            height: 6cm; /* Diameter */
+            border-radius: 50%; /* Make it circular */
+            box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Add shadow */
+        }
+    </style>
+</head>
+<body>
+    <!-- Add this img tag for the image -->
+    <img src="https://pngfreepic.com/wp-content/uploads/2022/04/Health-care-insurance-policy-Vector-image-350x292.png"  class="circle-image">
+    <h1>Your Medical Insurance Cost</h1>
+    <div class="prediction-box">
+        <p>{{ prediction }}</p>
+    </div>
+    <a href="/">Back</a>
+</body>
+</html>
